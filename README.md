@@ -1,13 +1,34 @@
-# OWASP-Juice-Shop-Penetration-Test
+# 🛡️ OWASP Juice Shop Web Application VAPT
+
+![Platform](https://img.shields.io/badge/Platform-Kali_Linux-blue)
+![Burp Suite](https://img.shields.io/badge/Burp-Community-orange)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+A practical **Web Application Vulnerability Assessment and Penetration Testing (VAPT)** project conducted against the **OWASP Juice Shop** application using **Burp Suite Community Edition**, **Kali Linux**, **Docker**, and manual testing methodologies.
+
+---
 
 ## 📖 Project Overview
 
-This repository documents a comprehensive penetration testing assessment conducted against the **OWASP Juice Shop** vulnerable web application in a controlled local lab environment.
+This repository documents a complete web application penetration testing assessment performed against **OWASP Juice Shop** in a controlled laboratory environment.
 
-The project demonstrates a structured web application penetration testing methodology, covering environment setup, reconnaissance, authentication analysis, authorization testing, API security assessment, and documentation of findings.
+The assessment follows a structured methodology covering:
 
-The objective of this project is to gain hands-on experience with industry-standard penetration testing tools while understanding the practical implementation of the **OWASP Top 10** and **OWASP API Security Top 10** concepts.
+- Environment Setup
+- Reconnaissance
+- Authentication Testing
+- Authorization Testing
+- Business Logic Assessment
+- Input Validation Testing
+- Cross-Site Scripting (XSS)
+- SQL Injection Assessment
+- Professional Security Reporting
 
+The project demonstrates practical web application security testing using industry-standard tools and aligns with concepts from the **OWASP Top 10** and **OWASP API Security Top 10**.
+
+---
 ## 🎯 Objectives
 
 The primary objectives of this project are:
@@ -99,6 +120,4 @@ This project was conducted exclusively against a locally deployed instance of **
 The purpose of this project is educational—to develop practical web application penetration testing skills and document a structured assessment methodology.
 
 No testing was performed against any system without explicit authorization.
-| Proxy Tool | Burp Suite Community Edition |
-| Web Browser | Burp Embedded Browser |
-| Reconnaissance Tools | Nmap, Gobuster, cURL |
+
