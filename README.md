@@ -29,6 +29,17 @@ The assessment follows a structured methodology covering:
 The project demonstrates practical web application security testing using industry-standard tools and aligns with concepts from the **OWASP Top 10** and **OWASP API Security Top 10**.
 
 ---
+## 📑 Table of Contents
+
+- [📖 Project Overview](#-project-overview)
+- [🎯 Objectives](#-objectives)
+- [🖥️ Lab Environment](#️-lab-environment)
+- [🛠️ Tools Used](#️-tools-used)
+- [🔍 Testing Methodology](#-testing-methodology)
+- [📂 Repository Structure](#-repository-structure)
+- [📄 Documentation](#-documentation)
+- [⚠️ Disclaimer](#️-disclaimer)
+  
 ## 🎯 Objectives
 
 The primary objectives of this project are:
@@ -111,7 +122,23 @@ OWASP-Juice-Shop-Penetration-Test/
     ├── xss/
     └── sql-injection/
 ```
+## 📄 Documentation
 
+The repository contains detailed documentation for each phase of the assessment:
+
+| Document | Description |
+|----------|-------------|
+| 01-Lab-Setup.md | Environment setup and deployment |
+| 02-Reconnaissance.md | Application discovery and attack surface mapping |
+| 03-Authentication-Testing.md | Registration, login, and JWT analysis |
+| 04-Authorization-Testing.md | Access control and protected resource testing |
+| 05-Business-Logic-Testing.md | Checkout workflow and business process analysis |
+| 06-Input-Validation.md | Server-side validation assessment |
+| 07-XSS-Testing.md | Cross-Site Scripting assessment |
+| 08-SQL-Injection.md | SQL-related testing and observations |
+| 09-Final-Findings.md | Summary, findings, and recommendations |
+
+The complete VAPT report is available in the **docs/** directory.
 
 ## ⚠️ Disclaimer
 
