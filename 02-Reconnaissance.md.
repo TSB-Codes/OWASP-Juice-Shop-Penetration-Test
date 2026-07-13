@@ -1,0 +1,134 @@
+# 🔎 Reconnaissance
+
+> **Objective:** Identify the application's functionality, user workflows, REST API endpoints, and attack surface before conducting security testing.
+
+---
+
+## Overview
+
+Reconnaissance is the initial phase of a Web Application Vulnerability Assessment and Penetration Testing (VAPT). During this phase, the target application was explored to understand its architecture, navigation, available features, and client-server communication.
+
+The assessment was performed manually while monitoring HTTP traffic using **Burp Suite Community Edition** to identify REST API endpoints and user-controlled input locations.
+
+---
+
+## Target Information
+
+| Attribute | Value |
+|-----------|-------|
+| **Application** | OWASP Juice Shop |
+| **Application Type** | Single Page Application (SPA) |
+| **Deployment** | Docker |
+| **Access URL** | `http://localhost:3000` |
+| **Authentication** | JSON Web Token (JWT) |
+| **API Type** | REST API |
+
+---
+
+## Reconnaissance Methodology
+
+The following activities were performed during this phase:
+
+- Explored the application's navigation and features.
+- Intercepted HTTP traffic using Burp Suite.
+- Identified REST API endpoints.
+- Mapped user workflows.
+- Identified user-controlled input fields.
+- Documented the application's attack surface.
+
+---
+
+## Application Features Identified
+
+The following functionality was discovered during reconnaissance:
+
+- User Registration
+- User Login
+- Product Catalogue
+- Product Search
+- Shopping Basket
+- Customer Feedback
+- Address Management
+- Payment Card Management
+- Delivery Selection
+- Order Checkout
+- Order History
+
+---
+
+## REST API Endpoints Identified
+
+| HTTP Method | Endpoint | Purpose |
+|-------------|----------|---------|
+| POST | `/api/Users` | User Registration |
+| POST | `/rest/user/login` | User Authentication |
+| GET | `/rest/products/search` | Product Search |
+| POST | `/api/BasketItems` | Add Item to Basket |
+| POST | `/api/Addresss` | Create Delivery Address |
+| POST | `/api/Cards` | Add Payment Card |
+| GET | `/api/Deliverys` | Retrieve Delivery Methods |
+| POST | `/rest/basket/{id}/checkout` | Checkout Order |
+
+---
+
+## Attack Surface
+
+The following user-controlled input locations were selected for security testing:
+
+| Feature | Assessment |
+|---------|------------|
+| Login Form | Authentication Testing |
+| Registration Form | Input Validation |
+| Search Functionality | XSS Assessment |
+| Customer Feedback | Input Validation & XSS |
+| Delivery Address | Business Logic |
+| Payment Card | Business Logic |
+| Shopping Basket | Business Logic |
+
+---
+
+## Key Observations
+
+- The application communicates primarily through REST APIs.
+- JSON is used for request and response bodies.
+- Authentication is handled using JWT.
+- Multiple user-controlled input fields were identified for further assessment.
+- Burp Suite successfully captured all application traffic for analysis.
+
+---
+
+## Tools Used
+
+- Burp Suite Community Edition
+- Mozilla Firefox
+- Google Chrome Developer Tools
+- Docker
+- Kali Linux
+
+---
+
+## Outcome
+
+The reconnaissance phase successfully identified the application's architecture, available functionality, API endpoints, and potential attack surface. These observations formed the foundation for subsequent testing phases, including authentication, authorization, business logic, input validation, Cross-Site Scripting (XSS), and SQL Injection assessments.
+
+---
+
+## Screenshots
+
+Place the following screenshots in:
+
+```
+screenshots/reconnaissance/
+```
+
+Recommended screenshots:
+
+- Home Page
+- Burp HTTP History
+- Product Catalogue
+- REST API Requests
+- Application Navigation
+
+---
+
+➡️ **Next:** [03-Authentication-Testing.md](03-Authentication-Testing.md)
