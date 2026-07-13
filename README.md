@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="OWASP Juice Shop Web Application VAPT Banner" width="100%">
+</p>
+
 # 🛡️ OWASP Juice Shop Web Application VAPT
 
 ![Platform](https://img.shields.io/badge/Platform-Kali_Linux-blue)
